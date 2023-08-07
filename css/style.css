@@ -291,13 +291,36 @@ main .section-gallery .gallery .gallery-images {
   flex-wrap: wrap;
   margin-top: 100px;
 }
-main .section-gallery .gallery .gallery-images .mini {
-  width: 300px;
-  margin: 10px;
-  transition: 0.5s;
+main .section-gallery .gallery .gallery-images .carousel-one-container {
+  overflow: hidden;
+  position: relative;
 }
-main .section-gallery .gallery .gallery-images .mini:hover {
-  transform: scale(1.1);
+main .section-gallery .gallery .gallery-images .carousel-one-container .carousel-one-slide {
+  display: none;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+main .section-gallery .gallery .gallery-images .carousel-one-container .carousel-one-slide img {
+  width: 100%;
+  height: auto;
+}
+main .section-gallery .gallery .gallery-images .prev-button,
+main .section-gallery .gallery .gallery-images .next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+main .section-gallery .gallery .gallery-images .prev-button {
+  left: 10px;
+}
+main .section-gallery .gallery .gallery-images .next-button {
+  right: 10px;
 }
 main .section-contact {
   position: relative;
