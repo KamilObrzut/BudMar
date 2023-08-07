@@ -168,7 +168,7 @@ main {
 
             .border {
                 height: 3px;
-                width: 150px;
+                width: 170px;
                 background-color: black;
                 margin-bottom: 50px;
             }
@@ -213,7 +213,7 @@ main {
 
             .border {
                 height: 3px;
-                width: 150px;
+                width: 170px;
                 background-color: white;
                 margin-bottom: 50px;
             }
@@ -269,7 +269,7 @@ main {
 
             .border {
                 height: 3px;
-                width: 150px;
+                width: 170px;
                 background-color: white;
                 margin-bottom: 50px;
             }
@@ -330,7 +330,7 @@ main {
 
             .border {
                 height: 3px;
-                width: 150px;
+                width: 170px;
                 background-color: black;
                 margin-bottom: 50px;
             }
@@ -373,7 +373,7 @@ main {
 
             .border {
                 height: 3px;
-                width: 150px;
+                width: 170px;
                 background-color: white;
                 margin-bottom: 50px;
             }
@@ -518,7 +518,7 @@ footer {
         p {
             color: white;
             font-size: 0.9rem;
-            text-align: justify;
+            text-align: center;
         }
 
         .author {
@@ -534,6 +534,9 @@ footer {
 
         nav {
             .container {
+                width: 74%;
+                justify-content: space-between;
+
                 .logo {
                     img {
                         width: 100px;
@@ -542,6 +545,10 @@ footer {
                     p {
                         font-size: 0.7rem;
                     }
+                }
+
+                .hamburger-menu {
+                    justify-content: end;
                 }
             }
         }
@@ -635,8 +642,20 @@ footer {
         }
 
         .scene-forest-two {
-            width: 25%;
-            top: -40%;
+            width: 20%;
+            top: -30%;
+        }
+
+        .scene-house {
+            top: -30%
+        }
+
+        .scene-garden-left {
+            bottom: -5%;
+        }
+
+        .scene-garden-right {
+            bottom: 0;
         }
     }
 }

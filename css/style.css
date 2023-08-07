@@ -146,7 +146,7 @@ main .section-about-us .about-us h2 {
 }
 main .section-about-us .about-us .border {
   height: 3px;
-  width: 150px;
+  width: 170px;
   background-color: black;
   margin-bottom: 50px;
 }
@@ -183,7 +183,7 @@ main .section-products .products h2 {
 }
 main .section-products .products .border {
   height: 3px;
-  width: 150px;
+  width: 170px;
   background-color: white;
   margin-bottom: 50px;
 }
@@ -229,7 +229,7 @@ main .section-offer .offer h2 {
 }
 main .section-offer .offer .border {
   height: 3px;
-  width: 150px;
+  width: 170px;
   background-color: white;
   margin-bottom: 50px;
 }
@@ -277,7 +277,7 @@ main .section-gallery .gallery h2 {
 }
 main .section-gallery .gallery .border {
   height: 3px;
-  width: 150px;
+  width: 170px;
   background-color: black;
   margin-bottom: 50px;
 }
@@ -312,7 +312,7 @@ main .section-contact .contact h2 {
 }
 main .section-contact .contact .border {
   height: 3px;
-  width: 150px;
+  width: 170px;
   background-color: white;
   margin-bottom: 50px;
 }
@@ -433,7 +433,7 @@ footer .footer-content {
 footer .footer-content p {
   color: white;
   font-size: 0.9rem;
-  text-align: justify;
+  text-align: center;
 }
 footer .footer-content .author {
   margin-top: 20px;
@@ -444,11 +444,18 @@ footer .footer-content .author {
   header {
     height: 50vh;
   }
+  header nav .container {
+    width: 74%;
+    justify-content: space-between;
+  }
   header nav .container .logo img {
     width: 100px;
   }
   header nav .container .logo p {
     font-size: 0.7rem;
+  }
+  header nav .container .hamburger-menu {
+    justify-content: end;
   }
   header .scene-clouds-one {
     top: -30%;
@@ -501,7 +508,16 @@ footer .footer-content .author {
     width: 40%;
   }
   header .scene-forest-two {
-    width: 25%;
-    top: -40%;
+    width: 20%;
+    top: -30%;
+  }
+  header .scene-house {
+    top: -30%;
+  }
+  header .scene-garden-left {
+    bottom: -5%;
+  }
+  header .scene-garden-right {
+    bottom: 0;
   }
 }/*# sourceMappingURL=style.css.map */
