@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -37,6 +38,38 @@ header {
             justify-content: space-between;
             width: 71%;
 
+            .menu {
+                display: flex;
+                align-items: center;
+
+                .menu-icon {
+                    font-size: 1.2rem;
+                    margin-left: 5px;
+                    display: none;
+                }
+
+                ul {
+                    display: flex;
+                    list-style: none;
+
+                    li {
+                        margin: 0 10px;
+
+                        a {
+                            color: black;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            font-size: 0.9rem;
+                            transition: 0.4s;
+                        }
+
+                        a:hover {
+                            color: #c1001e;
+                        }
+                    }
+                }
+            }
+
             .logo {
                 display: flex;
                 align-items: center;
@@ -47,39 +80,6 @@ header {
 
                 p {
                     margin-left: 20px;
-                }
-            }
-
-            .hamburger-menu {
-                width: 2rem;
-                height: 2rem;
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-
-                .bar {
-                    width: 1.3rem;
-                    height: 3px;
-                    background-color: black;
-                    border-radius: 2px;
-                }
-
-                .bar:before,
-                .bar:after {
-                    content: '';
-                    position: absolute;
-                    width: 1.55rem;
-                    height: 3px;
-                    background-color: black;
-                    border-radius: 2px;
-                }
-
-                .bar:after {
-                    transform: translateY(8px);
-                }
-
-                .bar:before {
-                    transform: translateY(-8px);
                 }
             }
         }
@@ -279,6 +279,11 @@ main {
                 flex-wrap: wrap;
                 justify-content: space-between;
 
+                p {
+                    color: white;
+                    text-align: justify;
+                }
+
                 .box {
                     width: 380px;
                     height: 400px;
@@ -307,6 +312,7 @@ main {
                             padding: 20px 20px;
                             font-size: 0.9rem;
                             text-align: justify;
+                            color: black;
                         }
                     }
                 }
@@ -318,12 +324,13 @@ main {
         position: relative;
         display: flex;
         justify-content: center;
-        margin-top: 100px;
+
 
         .gallery {
             width: 70%;
 
             h2 {
+                margin-top: 100px;
                 letter-spacing: 3px;
                 color: black;
             }
@@ -534,21 +541,49 @@ footer {
 
         nav {
             .container {
-                width: 74%;
-                justify-content: space-between;
+                display: flex;
+                align-items: flex-start;
 
                 .logo {
+                    margin-top: 5px;
+
                     img {
-                        width: 100px;
+                        width: 150px;
                     }
 
                     p {
-                        font-size: 0.7rem;
+                        display: none;
                     }
                 }
 
-                .hamburger-menu {
-                    justify-content: end;
+                .menu {
+                    margin-top: 5px;
+                    align-items: flex-start;
+
+                    .expand-menu {
+                        position: absolute;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        background-color: white;
+                        right: 15%;
+                        top: 100%;
+                        padding: 20px;
+
+                        li {
+                            a {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+
+                    .hidden {
+                        display: none;
+                    }
+
+                    .menu-icon {
+                        margin-top: 3px;
+                        display: flex;
+                    }
                 }
             }
         }
@@ -599,6 +634,11 @@ footer {
                 .products-content {
                     .products-logo {
                         justify-content: center;
+
+                        img {
+                            width: 150px;
+                            margin: 60px 20px 20px 20px;
+                        }
                     }
                 }
             }
@@ -656,6 +696,18 @@ footer {
 
         .scene-garden-right {
             bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    header {
+        nav {
+            .container {
+                p {
+                    display: none;
+                }
+            }
         }
     }
 }

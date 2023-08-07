@@ -9,18 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/318324a275.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
+        <section id="home-anchor"></section>
         <nav>
             <div class="container">
                 <div class="logo">
                     <img src="img/logoGrey.png" alt="">
                     <p>Elewacje i docieplenia</p>
                 </div>
-                <div class="hamburger-menu">
-                    <div class="bar"></div>
+                <div class="menu hidden">
+                    <i class="fa-sharp fa-solid fa-bars menu-icon"></i>
+                    <ul class="expand-menu hidden">
+                        <li><a href="#home-anchor">strona główna</a></li>
+                        <li><a href="#about-us-anchor">o nas</a></li>
+                        <li><a href="#products-anchor">produkty</a></li>
+                        <li><a href="#offer-anchor">oferta</a></li>
+                        <li><a href="#gallery-anchor">realizacje</a></li>
+                        <li><a href="#contact-anchor">kontakt</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -37,7 +47,7 @@
     </header>
 
     <main>
-        <section class="section-about-us">
+        <section class="section-about-us" id="about-us-anchor">
             <div class="about-us">
                 <h2>O nas</h2>
                 <div class="border"></div>
@@ -61,7 +71,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-products">
+        <section class="section-products" id="products-anchor">
             <div class="products">
                 <h2>Produkty</h2>
                 <div class="border"></div>
@@ -83,11 +93,15 @@
                 </div>
             </div>
         </section>
-        <section class="section-offer">
+        <section class="section-offer" id="offer-anchor">
             <div class="offer">
                 <h2>Oferta</h2>
                 <div class="border"></div>
                 <div class="offer-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis itaque id optio quas quo vitae,
+                        expedita inventore non tempore minus eius beatae, nisi corporis sequi dolorum hic fugit nam?
+                        Ipsam harum, veritatis, commodi nobis incidunt ullam deserunt, expedita repudiandae dolorem
+                        omnis ipsum? Quae debitis laborum modi qui quidem soluta facere?</p>
                     <div class="box contact">
                         <div class="contact-img">
                             <img src="img/contact.jpg" alt="">
@@ -119,7 +133,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-gallery">
+        <section class="section-gallery" id="gallery-anchor">
             <div class="gallery">
                 <h2>Realizacje</h2>
                 <div class="border"></div>
@@ -154,7 +168,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-contact">
+        <section class="section-contact" id="contact-anchor">
             <div class="contact">
                 <h2>Kontakt</h2>
                 <div class="border"></div>
