@@ -416,7 +416,7 @@ main .section-contact .contact .form-container .message-input textarea:focus {
 }
 main .section-contact .contact .form-container .button-container {
   text-align: center;
-  padding: 40px 0 70px 0;
+  padding: 40px 0 40px 0;
 }
 main .section-contact .contact .form-container .btn-send {
   padding: 10px 50px;
@@ -437,12 +437,15 @@ main .section-contact .contact .phone {
   flex-direction: column;
   align-items: center;
 }
-main .section-contact .contact .phone p {
-  color: white;
+main .section-contact .contact .phone .phone-text {
+  margin-top: 30px;
 }
 main .section-contact .contact .phone .phone-number {
   font-size: 2rem;
   font-weight: 700;
+}
+main .section-contact .contact .phone p {
+  color: white;
 }
 
 footer {
@@ -465,6 +468,41 @@ footer .footer-content p {
 footer .footer-content .author {
   margin-top: 20px;
   font-size: 0.7;
+}
+footer .footer-content .logo-ko {
+  margin-top: 15px;
+  width: 70px;
+}
+
+.big-container-thanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.big-container-thanks .container-thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.big-container-thanks .container-thanks p {
+  margin: 10px 0 10px 0;
+}
+.big-container-thanks .container-thanks .btn-back-home {
+  padding: 5px 30px;
+  background-color: transparent;
+  border: 1px solid #313131;
+  border-radius: 10px;
+  color: #313131;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  transition: 800ms;
+}
+.big-container-thanks .container-thanks .btn-back-home:hover {
+  border: 1px solid white;
+  background-color: #c1001e;
+  color: #ffffff;
 }
 
 @media (max-width: 992px) {
@@ -508,11 +546,12 @@ footer .footer-content .author {
     display: flex;
   }
   header .scene-clouds-one {
-    top: -30%;
-    left: -20%;
+    top: -50%;
+    left: -50%;
   }
   header .scene-clouds-two {
     top: 30%;
+    right: -10%;
   }
   header .scene-forest-one {
     width: 50%;
