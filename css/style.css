@@ -544,6 +544,37 @@ footer .footer-content .author {
   main .section-offer .offer .offer-content {
     justify-content: center;
   }
+  main .section-gallery .gallery {
+    width: 90%;
+  }
+  main .section-gallery .gallery h2 {
+    margin-left: 11%;
+  }
+  main .section-gallery .gallery .border {
+    margin-left: 11%;
+  }
+  main .section-gallery .gallery .gallery-images .carousel-one-container .carousel-one-slide {
+    display: none;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  main .section-gallery .gallery .gallery-images .carousel-one-container .carousel-one-slide img {
+    width: 100%;
+    height: auto;
+  }
+  main .section-gallery .gallery .gallery-images .prev-button,
+  main .section-gallery .gallery .gallery-images .next-button {
+    position: absolute;
+    top: 92%;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 0.6rem;
+    cursor: pointer;
+  }
   main .section-contact .contact .form-container .name-and-email {
     flex-direction: column;
   }
